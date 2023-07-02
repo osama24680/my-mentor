@@ -1,0 +1,176 @@
+@use "../../index.scss";
+
+svg {
+  color: var(--Secondary);
+  margin: 5px;
+}
+
+.MentoringRequestSection {
+  margin: 50px 0;
+}
+
+.MentoringRequest {
+  background-color: var(--Grey);
+  box-shadow: -1px 3px 3px #0000001a;
+  padding: 1px;
+  border-radius: 20px;
+  .MentoringRequest_Title {
+    background-color: var(--Secondary);
+    width: fit-content;
+    padding: 10px 55px;
+    border-bottom-left-radius: 40px;
+    margin-left: auto;
+    color: var(--Grey);
+  }  
+  form {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+input, label, select {
+  color: var(--Secondary);
+  padding-left: 10px;
+}
+
+input, select {
+  height: 40px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--Primary);
+}
+
+input::placeholder {
+  color: var(--Secondary);
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input {
+  &#title {
+    width: 50%;
+  }
+
+  &#Description {
+    width: 100%;
+
+    + .row {
+      /* margin: 15px 0; */
+
+      label {
+        width: 20%;
+      }
+
+      select {
+        width: 50%;
+        margin-left: 15px;
+
+        &:last-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.row {
+  + .row {
+    .col:first-child {
+      display: flex;
+      align-items: end;
+      justify-content: space-evenly;
+
+      input {
+        background-color: var(--Primary);
+        color: var(--Primary);
+      }
+    }
+
+    #Amount {
+      width: 100%;
+    }
+
+    #currency {
+      width: 50%;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  ~ input[type=text] {
+    width: 75%;
+  }
+}
+
+form button {
+  background-color: var(--Secondary);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: block;
+  margin: 50px 40px 40px auto;
+}
+
+@media (max-width: 767px) {
+  .MentoringRequest_Title {
+    width: 100%;
+    text-align: center;
+  }
+
+  select, input:not(input[type=radio], #last_input_1, #last_input_2, #last_input_3) {
+    display: block;
+    width: 100% !important;
+  }
+
+  select {
+    margin: 0 !important;
+
+    /* margin: 0px 0px 10px 0 !important; */
+  }
+
+  .row ~ input[type=text] {
+    width: 93% !important;
+  }
+
+  svg {
+    width: 4% !important;
+  }
+
+  label, form button {
+    width: 100%;
+  }
+}
+
+select option:hover {
+  background-color: var(--Grey);
+  border-bottom: 2px solid var(--Primary);
+}
+
+/* ========= Side Bar =========== */
+
+ul {
+  margin-top: 30px !important;
+
+  li {
+    margin-bottom: 15px;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--Secondary);
+    }
+
+    &:last-child {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  ul {
+    display: none;
+  }
+}

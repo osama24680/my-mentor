@@ -1,0 +1,37 @@
+.container{
+    background-color: var(--Grey);
+    border-radius: 15px;
+}
+.title{
+    background-color: #00757F;
+    color: var(--Grey);
+    border-radius: 0 15px 0 40px;
+} 
+form{
+    color: var(--Secondary);
+    font-weight: 600;
+}
+input ,
+select{
+    color: var(--Secondary);
+    border-bottom: 1px solid var(--Primary) ;
+    border-radius: 4px;
+    padding: 5px;
+    font-weight: 500;
+}
+input::placeholder{
+    color: var(--Secondary);
+}
+input:focus{
+    border: 1px solid var(--Primary) ;
+}
+input[type=checkbox]:checked{
+    background-color: var(--Primary);
+    border: 0;
+}
+.butn{
+    background-color: var(--Secondary) ;
+    color: var(--Grey);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
