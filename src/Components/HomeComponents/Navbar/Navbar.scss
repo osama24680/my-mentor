@@ -1,0 +1,145 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    .navbar_logo {
+        img {
+            width: 200px;
+        }
+    }
+    .navbar_account {
+        position: relative;
+        width: 90px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: var(--light_secondary);
+        color:var(--grey);
+        .navbar_account_circle {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            bottom: 0;
+            background-color: var(--secondary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar_account_dropdown {
+            position: absolute;
+            z-index: 2;
+            top: 70px;
+            right: 0;
+            background-color: var(--list_color);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            padding: 20px 10px 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            transition: .5s;
+            .navbar_account_dropdown_data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .navbar_account_dropdown_data_img {
+                    width: 30%;
+                    justify-self: flex-end;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                }
+                .navbar_account_dropdown_data_personal {
+                    width: 60%;
+                    p {
+                        font-size: 14px;
+                     
+                        &:first-child {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            .navbar_account_dropdown_view {
+                width: 100%;
+                background-color: var(--secondary);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3px 0;
+                margin-top: 15px;
+                border-radius: 30px;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--list_color_hover);
+                }
+                
+            }
+            .navbar_account_dropdown_help {
+                margin-top: 25px;
+                text-align: left;
+                width: 100%;
+                cursor: pointer;
+               
+            }
+            .navbar_account_dropdown_logOut{
+                margin-top: 20px;
+                border-top: 1px solid var(--grey);
+                width: 100%;
+                text-align: center;
+                padding: 5px 0;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        .navbar_logo {
+            img {
+                width: 180px;
+            }
+        }
+        .navbar_account {
+            width: 75px;
+            height: 40px;
+            .navbar_account_circle {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 574px) {
+    .navbar {
+        .navbar_logo {
+            img {
+                width: 150px;
+            }
+        }
+        .navbar_account {
+            width: 60px;
+            height: 35px;
+            .navbar_account_circle {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+.hideAccount{
+    display: none !important;
+}
+.moveCircle{
+    left:45% !important;
+}

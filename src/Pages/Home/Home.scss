@@ -1,0 +1,217 @@
+.searchmentors {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../assets/sliderBackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
+    position: relative;
+
+    .searchmentors_content {
+        background-color: var(--grey);
+        position: absolute;
+        left: 20px;
+        top: 10%;
+        bottom: 20px;
+        border-radius: 25px;
+        padding: 30px;
+        width: 40%;
+        height: 340px;
+        p {
+            margin: 15px 0;
+        }
+        .searchmentors_content_inputs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .selectDiv {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                width: 36%;
+                .searchmentors_content_inputs_fields {
+                    appearance: none;
+                    background-color: var(--light_grey);
+                    padding: 17px 0px 17px 17px;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    font-size: 15px;
+                    width: 100%;
+                }
+                .arrowContainer {
+                    height: 100%;
+                    position: absolute;
+                    left: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg {
+                        font-weight: bold;
+                        font-size: 19px;
+                    }
+                }
+            }
+            .searchmentors_content_inputs_searchInput {
+                position: relative;
+                width: 63%;
+
+                input {
+                    width: 100%;
+                    padding: 17px 0px 17px 17px;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    background-color: var(--light_grey);
+                }
+                div {
+                    position: absolute;
+                    right: 2%;
+                    top: 10%;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg {
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.DiscoverMentors {
+    h2 {
+        font-weight: normal;
+        margin: 25px 0 15px 0;
+    }
+}
+.RecentOppo {
+    h2 {
+        font-weight: normal;
+        margin: 75px 0 15px 0;
+    }
+    .more {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        a {
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+.OpenRequests {
+    h2 {
+        font-weight: normal;
+        margin: 75px 0 45px 0;
+    }
+    .more {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        a {
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+.locationMentors {
+    h2 {
+        font-weight: normal;
+        margin: 65px 0 15px 0;
+    }
+}
+@media (max-width: 1024px) {
+    .searchmentors {
+        height: 60vh;
+        border-radius: 10px;
+        .searchmentors_content {
+            left: 0;
+            right: 30%;
+            top: 5%;
+            bottom: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            width: 65%;
+            margin: auto;
+            height: 230px;
+            p {
+                margin: 10px 0;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .searchmentors_content_inputs {
+                margin-top: 20px;
+                .selectDiv {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 36%;
+                    .searchmentors_content_inputs_fields {
+                        padding: 13px 0px 13px 13px;
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        font-size: 12px;
+                    }
+                    .arrowContainer {
+                        svg {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .searchmentors_content_inputs_searchInput {
+                    input {
+                        padding: 13px 0px 13px 13px;
+                        border-top-right-radius: 200px;
+                        border-bottom-right-radius: 200px;
+                    }
+                    ::placeholder {
+                        font-size: 11px;
+                    }
+
+                    div {
+                        position: absolute;
+                        right: 4%;
+                        top: 25%;
+                        width: 25px;
+                        height: 25px;
+                        svg {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .searchmentors {
+        height: 55vh;
+        .searchmentors_content {
+            right: 0;
+            padding: 10px;
+            padding-top: 20px;
+            width: 95%;
+            height: 285px;
+        }
+    }
+    .DiscoverMentors,
+    .RecentOppo {
+        h2 {
+            font-size: 16px;
+        }
+    }
+}

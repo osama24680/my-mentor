@@ -1,0 +1,116 @@
+.invite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    border-radius: 20px;
+    background-color: var(--light_grey);
+    .invite_image {
+        width: 35%;
+        img {
+            width: 100%;
+        }
+    }
+    .invite_data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 20px;
+            align-self: flex-start;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        div {
+            align-self: flex-start;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+            input {
+                padding: 15px;
+                border-radius: 40px;
+                width: 100%;
+            }
+            div {
+                position: absolute;
+                top:-40%;
+                right: 0%;
+                height: 100%;
+                width: 20%;
+                border-radius: 40px;
+                background-color: #000;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: transparent;
+                    border:1px solid #000;
+                    button {
+                        color: var(--white);
+                        background-color: transparent;
+                        
+                    }
+                }
+                button {
+                    color: var(--grey);
+                    background-color: transparent;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 772px) {
+    .invite {
+        flex-direction: column;
+        .invite_image {
+            width: 100%;
+            margin-top: 30px;
+            order: 2;
+            align-self: flex-start;
+
+            img {
+                width: 100%;
+            }
+        }
+        .invite_data {
+            width: 100%;
+            padding-top: 30px;
+            h1 {
+                font-size: 18px;
+                align-self: center;
+                text-align: center;
+            }
+            p {
+                font-size: 14px;
+                align-self: center;
+            }
+            div {
+                align-self: center;
+
+                input {
+                    padding: 10px;
+                    border-radius: 40px;
+                }
+                div {
+                    position: absolute;
+                    top: -50%;
+                    right: 0%;
+                    height: 100%;
+                    width: 30%;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}

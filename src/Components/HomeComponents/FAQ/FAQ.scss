@@ -1,0 +1,90 @@
+.FAQ{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 100px;
+    .FAQ_text{
+        width: 40%;
+        h1{
+            font-size: 25px;
+        }
+        h3{
+            font-weight: normal;
+            margin-top: 10px;
+        }
+    }
+    
+    .FAQ_accordion{
+        width: 50%;
+        .chevron-down {
+            transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+          }
+          
+          .szh-accordion {
+            &__item {
+              border-bottom: 1px solid var(--middle_grey);
+          
+              &-btn {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin: 0;
+                padding: 1rem .5rem;
+                font-size: .8rem;
+                font-weight: bold;
+                text-align: left;
+                color: #000;
+                background-color: transparent;
+                border: none;
+                &:hover {
+                
+                }
+              }
+          
+              &-content {
+                transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+              }
+          
+              &-panel {
+                padding: 1rem .5rem;
+                font-size: .7rem;
+                color:var(--hard_grey);
+                line-height: 1.8;
+
+              }
+          
+              &--expanded {
+                .szh-accordion__item-btn {
+                  background-color: #e7e7e7;
+                }
+                .chevron-down {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+          
+    }
+}
+
+
+
+
+@media(max-width:700px){
+    .FAQ{
+        flex-direction: column;
+        .FAQ_text{
+            width: 100%;
+            h1{
+                font-size: 23px;
+            }
+        }
+        .FAQ_accordion{
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}

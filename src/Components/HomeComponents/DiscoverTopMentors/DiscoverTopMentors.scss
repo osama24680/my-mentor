@@ -1,0 +1,68 @@
+.DiscoverMentors_elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    .DiscoverMentors_elements_element {
+        width: 95%;
+        position: relative;
+        border-radius: 10px;
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+        div {
+            position: absolute;
+            left: 10px;
+            bottom: 25%;
+            background-color: var(--grey);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-radius: 10px;
+            svg {
+                color: gold;
+            }
+            span {
+                font-weight: bold;
+                margin: 0 5px;
+                font-size: 14px;
+            }
+            p {
+                color: var(--hard_grey);
+                font-size: 14px;
+            }
+        }
+        h3 {
+            color: #000;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        h4 {
+            color: #000;
+            font-weight: normal;
+        }
+    }
+}
+
+.alice-carousel__next-btn,
+.alice-carousel__prev-btn{
+    font-weight: bold;
+    font-size: 15px;
+    width: 20px !important;
+    height: 20px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--hard_grey);
+    border-radius: 50%;
+    position: absolute;
+    top:-37px;
+    right:0;
+}
+.alice-carousel__prev-btn{
+right:30px;
+}
