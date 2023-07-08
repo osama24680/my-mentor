@@ -6,6 +6,10 @@ import GetInTouch from "./Pages/GetInTouch/GetInTouch.js"
 import OpportunitySearch from "./Pages/OpportunitySearch/OpportunitySearch.js"
 import RequestSearch from "./Pages/RequestSearch/RequestSearch.js"
 import NotFound from "./Pages/NotFound/NotFound.js"
+import Login from "./Pages/Login/Login.js"
+import Signup from "./Pages/Signup/Signup.js"
+import ProfileInfo from './Pages/ProfileInfo/ProfileInfo.js';
+import EditMentorPortfolio from './Pages/EditMentorPortfolio/EditMentorPortfolio.js';
 
 
 function App() {
@@ -20,6 +24,10 @@ function App() {
             <Route path="/getInTouch" element={<GetInTouch />} />
             <Route path="/opportunitySearch" element={<OpportunitySearch />} />
             <Route path="/OpenRequests" element={<RequestSearch />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/profileinfo" element={<ProfileInfo />} />
+            <Route path="/EditMentorPortfolio" element={<EditMentorPortfolio />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

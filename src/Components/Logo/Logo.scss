@@ -1,0 +1,29 @@
+.LogoImage_web{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+    img{
+        width: 120px;
+    }
+}
+.LogoImage_mobile{
+    display: none;
+}
+
+@media(max-width:767px){
+    .LogoImage_web{
+       display: none;
+    }
+    .LogoImage_mobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        img{
+            width: 50px;
+        }
+    }
+    
+}

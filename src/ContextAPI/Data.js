@@ -154,3 +154,18 @@ export const accordionData = [
     `,
   },
 ];
+
+export const lookinOptionsData = [
+  { value: "Mentor", label: "Mentor" },
+  { value: "Mentee", label: "Mentee" },
+];
+
+export const designationOptionsData = [
+  { value: "Computer Science", label: "Computer Science" },
+  { value: "Graphic Design", label: "Graphic Design" },
+  { value: "Computer Engineering", label: "Computer Engineering" },
+  {
+    value: "Electronics and Communications",
+    label: "Electronics and Communications",
+  },
+];

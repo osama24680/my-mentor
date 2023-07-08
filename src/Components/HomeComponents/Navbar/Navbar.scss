@@ -35,13 +35,14 @@
             border-top-left-radius: 12px;
             border-bottom-left-radius: 12px;
             border-bottom-right-radius: 12px;
-            padding: 20px 10px 0 10px;
+            padding: 10px 10px 0 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 250px;
             transition: .5s;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             .navbar_account_dropdown_data {
                 display: flex;
                 justify-content: space-between;
@@ -97,6 +98,25 @@
                 padding: 5px 0;
                 cursor: pointer;
                 
+            }
+            .navbar_account_dropdown_login{
+                border-bottom: 1px solid var(--grey);
+                width: 100%;
+                text-align: center;
+                cursor: pointer;
+                padding-bottom: 10px;
+                a{
+                    color:var(--grey);
+                }
+            }
+            .navbar_account_dropdown_signup{
+                width: 100%;
+                text-align: center;
+                cursor: pointer;
+                padding: 10px 0;
+                a{
+                    color:var(--grey);
+                }
             }
         }
     }

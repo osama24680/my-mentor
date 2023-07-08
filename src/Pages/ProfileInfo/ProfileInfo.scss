@@ -1,0 +1,251 @@
+.profileinfo {
+    .profileinfo_content {
+        width: 65%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 30px;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            align-self: flex-start;
+        }
+        p {
+            align-self: flex-start;
+        }
+        .profileinfo_content_inputs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+            .profileinfo_content_inputs_left {
+                width: 45%;
+                .profileinfo_content_inputs_left_inputField {
+                    margin-bottom: 25px;
+                    width: 100%;
+                    .css-b62m3t-container {
+                        .css-13cymwt-control {
+                            border: none;
+                            border-bottom: 0.1rem solid var(--primary);
+
+                            &:focus {
+                                border: none;
+                                border-bottom: 0.1rem solid var(--primary);
+                            }
+                           
+                        }
+                        .css-t3ipsp-control {
+                            border: none;
+                            border-bottom: 0.1rem solid var(--primary);
+                            &:focus {
+                                border: none;
+                                border-bottom: 0.1rem solid var(--primary);
+                            }
+                        }
+                    }
+                    label {
+                        font-size: 13px;
+                        color: var(--list_color_hover);
+                        font-weight: bold;
+                        margin-left: 8px;
+                    }
+                    input {
+                        border-bottom: 0.1rem solid var(--primary);
+                        width: 100%;
+                        padding-bottom: 7px;
+                        padding-left: 10px;
+                        font-weight: bold;
+                    }
+                }
+               
+            }
+            .profileinfo_content_inputs_right {
+                width: 45%;
+                
+                &:nth-child(2){
+                    margin-top: 25px;
+
+                }
+                .profileinfo_content_inputs_right_inputField {
+                    margin-bottom: 25px;
+                    width: 100%;
+                    
+                    input {
+                        border-bottom: 0.1rem solid var(--primary);
+                        width: 100%;
+                        padding-bottom: 7px;
+                        // margin-bottom: 17px;
+                        margin-top: 20px;
+                       
+                    }
+                    ::placeholder {
+                        font-weight: bold;
+                        color: #84beb5;
+                    }
+                }
+              
+             
+            }
+        }
+        .profileinfo_content_downSection{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+            .profileinfo_content_downSection_resume{
+                width: 45%;
+                button {
+                    padding: 7px 10px;
+                    background-color: var(--primary);
+                    border-radius: 15px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                p {
+                    font-size: 11px;
+                    color: var(--hard_grey);
+                    margin-top: 10px;
+                }
+            }
+            .profileinfo_content_downSection_submit{
+                width: 45%;
+                display: flex;
+                justify-content: end;
+                button {
+                    padding: 7px 15px;
+                    background-color: var(--secondary);
+                    border-radius: 20px;
+                    color: #fff;
+                    align-items: right;
+                    font-size: 15px;
+                    cursor: pointer;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+.mentor_input{
+    display: none;
+}
+.hiring_checkedBox{
+    color: var(--secondary);
+    margin-top: 0px !important;
+    label{
+        width: 80%;
+    }
+    #A_hiring {
+     
+        width: 20%;
+    }
+}
+.css-qbdosj-Input{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+@media(max-width:992px){
+    .profileinfo {
+    .profileinfo_content {
+        width: 75%;
+       
+        h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            align-self: flex-start;
+        }
+        p {
+            font-size: 12px;
+        }
+        .profileinfo_content_inputs {
+            flex-direction: column;
+         
+            .profileinfo_content_inputs_left {
+                width: 100%;
+            }
+            .profileinfo_content_inputs_right {
+                width: 100%;
+
+                .profileinfo_content_inputs_right_inputField {
+                    margin-bottom: 10px;
+                    width: 100%;
+                
+                }
+                .profileinfo_content_inputs_right_inputField:nth-child(1) {
+                    margin-top: 00px;
+                }
+                .profileinfo_content_inputs_right_inputField:nth-child(2) {
+                    margin-top: 0px;
+                }
+                .profileinfo_content_inputs_right_inputField:nth-child(3) {
+                    margin-top: 0px;
+                }
+            }
+        }
+        .profileinfo_resume_submit {
+           flex-direction: column;
+            .profileinfo_resume_submit__resume {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+               button{
+                justify-self: flex-start;
+                width: 50%;
+               }
+                p {
+                   
+                    margin-top: 15px;
+                }
+            }
+            .profileinfo_resume_submit__submit {
+                width: 100%;
+              margin-top: 15px;
+              display: flex;
+              justify-content: center;
+                button {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+}
+@media(max-width:576px){
+    .profileinfo {
+    .profileinfo_content {
+        width: 100%;
+
+        .profileinfo_content_downSection{
+           flex-direction: column;
+            margin-top: 30px;
+            .profileinfo_content_downSection_resume{
+                width: 100%;
+        
+            }
+            .profileinfo_content_downSection_submit{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                button {
+                    padding: 7px 15px;
+                    background-color: var(--secondary);
+                    border-radius: 20px;
+                    color: #fff;
+                    align-items: right;
+                    font-size: 15px;
+                    cursor: pointer;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+}

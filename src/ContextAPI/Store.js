@@ -1,5 +1,12 @@
-import { createContext, useState, useRef } from "react";
-import { discoverMentorsData,recentOppoData,mentoringRequestsData } from "./Data";
+import { createContext, useState, useRef, useEffect } from "react";
+import {
+  discoverMentorsData,
+  recentOppoData,
+  mentoringRequestsData,
+  lookinOptionsData,
+  designationOptionsData,
+} from "./Data";
+
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
@@ -16,8 +23,16 @@ export const MentorProvider = (props) => {
   ]);
   const [discoverMentors, setDiscoverMentors] = useState(discoverMentorsData);
   const [recentOppo, setRecentOppo] = useState(recentOppoData);
-  const [mentoringRequests, setMentoringRequests] = useState(mentoringRequestsData);
+  const [mentoringRequests, setMentoringRequests] = useState(
+    mentoringRequestsData
+  );
   const [inviteValue, setInviteValue] = useState("");
+  const [isLoggedin, setIsLoggedin] = useState(false);
+  const [lookinOptions, setLookinOptions] = useState(lookinOptionsData);
+  const [designationOptions, setDesignationOptions] = useState(designationOptionsData);
+  const [selectedLookingOption, setSelectedLookingOption] = useState("Mentee");
+  const [selectedDesignationOption, setSelectedDesignationOption] = useState(null);
+  const [isMenteeOption, setIisMenteeOption] = useState(false);
   let form = useRef();
 
   const accountToggle = () => {
@@ -47,6 +62,15 @@ export const MentorProvider = (props) => {
     }
   };
 
+  useEffect(()=>{
+    if(selectedLookingOption?.value==="Mentee" ||selectedLookingOption==="Mentee"){
+      setIisMenteeOption(true)
+    }else{
+      setIisMenteeOption(false)
+    }
+  
+  },[selectedLookingOption])
+
   let values = {
     discoverMentors,
     recentOppo,
@@ -58,6 +82,15 @@ export const MentorProvider = (props) => {
     inviteValue,
     setInviteValue,
     form,
+    isLoggedin,
+    lookinOptions,
+    designationOptions,
+    selectedLookingOption,
+    setSelectedLookingOption,
+    selectedDesignationOption,
+    setSelectedDesignationOption,
+    isMenteeOption,
+    
   };
 
   return (

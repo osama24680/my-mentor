@@ -1,0 +1,114 @@
+.login{
+    .login_content {
+        width:30%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+        h1 {
+            font-size: 27px;
+            margin-bottom: 30px;
+        }
+        .login_content_inputField {
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%;
+            input {
+                border-bottom: 0.1rem solid var(--primary);
+                width: 100%;
+                padding-bottom: 7px;
+            }
+            ::placeholder {
+                font-weight: bold;
+                color: #84beb5;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: transparent;
+                color: var(--secondary);
+                cursor: pointer;
+            }
+        }
+        h3 {
+            font-weight: normal;
+            margin-top: -5px;
+            font-size: 13px;
+            align-self: flex-start;
+        }
+        .loginBtn {
+            padding: 4px 10px ;
+            border-radius: 15px;
+            color:#fff;
+            background-color: var(--secondary);
+            width: 40%;
+            margin-top: 3.0px;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--list_color_hover);
+            }
+        }
+        .login_content_otherways{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3{
+                font-weight: bold;
+                align-self: center;
+                font-size: 13px;
+            }
+            div{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: #2a2a42;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                cursor: pointer;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid #2a2a42;
+                }
+                svg{
+                    color:#fff;
+                    &:hover{
+                        color:#2a2a42;
+                    }
+                }
+            }
+        }
+    }
+    .createAccount{
+        margin-top: 20px;
+        a{
+            color:var(--secondary)
+        }
+    }
+    
+}
+
+@media(max-width:564px){
+    .login_content {
+        width: 90%;
+        margin-top: 30px;
+        .loginBtn {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width:992px){
+    .login_content {
+        width: 60%;
+        margin-top: 30px;
+        .loginBtn {
+            margin-top: 30px;
+        }
+    }
+}
