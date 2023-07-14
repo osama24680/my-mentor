@@ -1,0 +1,181 @@
+.MentorshipDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .MentorshipDetails_leftList{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        a{
+            color:#000;
+            margin-bottom: 15px;
+   
+
+        }
+    }
+    .MentorshipDetails_rightContent{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        .redFlag{
+            position: absolute;
+            top:0;
+            right:0;
+            padding: 15px 30px;
+            border-bottom-left-radius: 50px;
+            background-color: #007480;
+            color:#fff;
+            font-size: 18px;
+        }
+        .MentorshipDetails_rightContent_content{
+            margin-top: 40px;
+            padding: 30px;
+            h2{
+                span{
+                    color:var(--secondary)
+                }
+            }
+            .description{
+                margin: 50px 0;
+            }
+            .props{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                div{
+                    p{
+                        margin-bottom: 15px;
+                        span{
+                            color:var(--secondary)
+                        }
+                    }
+                  
+                }
+            }
+            h3{
+                margin-top: 30px;
+                margin-bottom: 20px;
+                color:var(--secondary)
+            }
+            ul{
+                margin-left: 30px;
+                li{
+                    list-style-type: disc;
+                }
+               
+            }
+            .MentorshipDetails_rightContent_content_about{
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                .MentorshipDetails_rightContent_content_about_items{
+                    width: 30%;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        h3{
+                            margin: 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .MentorshipDetails_rightContent_content_iamge{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 0px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 12px;
+                p{
+                    width: 70%;
+                }
+                div{
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                    }
+                    a{
+                        margin-top: 14px;
+                        padding: 7px 20px;
+                        border-radius: 40px;
+                        background-color: #c4c4c4;
+                        cursor: pointer;
+                        color:#fff;
+                        &:hover{
+                            border:1px solid var(--primary);
+                            color:var(--primary) ;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            .MentorshipDetails_rightContent_content_comment{
+                width: 90%;
+                margin: auto;
+                background-color: #f8f8f8;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 40px;
+                .MentorshipDetails_rightContent_content_comment_image{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: #d9d9d9;
+                }
+                .MentorshipDetails_rightContent_content_comment_title{
+                    width: calc(100% - 130px);
+                    h3{
+                        margin: 0;
+                    }
+                }
+            }
+            .MentorshipDetails_rightContent_content_input{
+                width: 90%;
+                margin: auto;
+                input{
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 15px;
+                    width: 100%;
+                    margin-top: 30px;
+                }
+            }
+            .MentorshipDetails_rightContent_content_send{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
+              
+                button{
+                    background-color: var(--secondary);
+                    border-radius: 20px;
+                    padding: 10px 30px;
+                    color:#fff;
+                    font-size: 16px;
+                    cursor: pointer;
+                  
+                }
+            }
+        }
+    }
+}

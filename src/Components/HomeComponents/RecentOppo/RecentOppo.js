@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import "./RecentOppo.scss"
 import { mentorStore } from '../../../ContextAPI/Store'
+import { Link } from 'react-router-dom'
 const RecentOppo = () => {
 
     let ctx = useContext(mentorStore)
@@ -14,8 +15,8 @@ const RecentOppo = () => {
                             <p>Get mentored by: <span>{oppo.mentor}</span></p>
                         </div>
                         <div className='RecentOppo_elements_element_main_right'>
-                            <div><button>Request</button></div>
-                            <div><button>View</button></div>
+                            <Link to=""><button>Request</button></Link>
+                            <Link to={`/MentorShipDetails/${oppo.id}`}><button>View</button></Link>
                         </div>
                     </div>
                     <div className='RecentOppo_elements_element_props'>

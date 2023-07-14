@@ -39,6 +39,9 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -53,6 +56,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 .App {
     width: 100%;
@@ -75,6 +82,9 @@ a {
 .app_container {
     width: 94%;
     margin: auto;
+}
+.hideList{
+    display: none !important;
 }
 
 @mixin flex_center{

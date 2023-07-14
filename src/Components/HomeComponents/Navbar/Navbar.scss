@@ -3,33 +3,34 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    margin-bottom: 10px;
     .navbar_logo {
         img {
-            width: 200px;
+            width: 120px;
         }
     }
     .navbar_account {
         position: relative;
-        width: 90px;
-        height: 50px;
+        width: 70px;
+        height: 30px;
         border-radius: 50px;
         background-color: var(--light_secondary);
         color:var(--grey);
         .navbar_account_circle {
             position: absolute;
-            left: 0%;
             top: 0;
+            right:0;
             bottom: 0;
             background-color: var(--secondary);
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             cursor: pointer;
         }
         .navbar_account_dropdown {
             position: absolute;
             z-index: 2;
-            top: 70px;
+            top: 40px;
             right: 0;
             background-color: var(--list_color);
             border-top-left-radius: 12px;
@@ -80,6 +81,9 @@
                 cursor: pointer;
                 &:hover {
                     background-color: var(--list_color_hover);
+                }
+                a{
+                    color:#fff;
                 }
                 
             }
@@ -161,5 +165,6 @@
     display: none !important;
 }
 .moveCircle{
-    left:45% !important;
+    right:100% !important;
+    transform: translateX(100%) !important;
 }

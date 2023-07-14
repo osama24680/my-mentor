@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./OpenRequests.scss";
 import { mentorStore } from '../../../ContextAPI/Store'
+import { Link } from "react-router-dom";
 const OpenRequests = () => {
   let ctx = useContext(mentorStore);
   return (
@@ -16,9 +17,9 @@ const OpenRequests = () => {
           </div>
           <div className="OpenRequests_element_right">
             <div className="OpenRequests_element_right_btns">
-              <div>
+              <Link to={`/MenteeShipDetails/${mentor_req.id}`}>
                 <button>View Details</button>
-              </div>
+              </Link>
               <div>
                 <button>Mentor</button>
               </div>

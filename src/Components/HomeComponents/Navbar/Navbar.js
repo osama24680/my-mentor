@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar_logo">
+      <Link to="/" className="navbar_logo">
         <img src={LogoImg} alt="logo" />
-      </div>
+      </Link>
       <div className="navbar_account">
         <div
           className={`navbar_account_circle ${!ctx.active ? "" : "moveCircle"}`}
@@ -34,10 +34,10 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="navbar_account_dropdown_view">
-                <p>View Profile</p>
+                <Link to="/UserProfile/ahmed_khaled/Mentee">View Profile</Link>
               </div>
               <div className="navbar_account_dropdown_help">
-                <p>Help</p>
+                <Link to="/GetInTouch" style={{color:"#fff"}}>Help</Link>
               </div>
               <div className="navbar_account_dropdown_logOut">
                 <p>Log Out</p>

@@ -1,0 +1,267 @@
+.ViewProfile {
+    width: 60%;
+    margin: auto;
+    .ViewProfile_BackgroundImage {
+        width: 100%;
+        height: 55vh;
+        border-radius: 20px;
+        background-image: url("../../assets/colored_background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        button {
+            padding: 7px 20px;
+            background-color: var(--primary);
+            border-radius: 20px;
+            color: #fff;
+            font-size: 18px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .BackgroundImage_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #000;
+            .imageAvatar {
+                position: relative;
+
+                img {
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 50%;
+                }
+                svg {
+                    position: absolute;
+                    bottom: 5%;
+                    right: 5%;
+                    font-size: 38px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+            h3 {
+                margin-top: 10px;
+            }
+            h4 {
+                font-weight: normal;
+            }
+            p {
+                color: #fff;
+                margin-top: 10px;
+            }
+        }
+    }
+    .ViewProfile_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f8f8;
+        border-radius: 15px;
+        margin-top: 50px;
+        padding: 20px;
+        .ViewProfile_content_section_1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 20px;
+            .ViewProfile_content_section_1_left {
+                width: 50%;
+               div{
+                margin-bottom: 10px;
+                p{
+                    color:var(--secondary)
+                }
+                h3{
+                    margin: 0;
+                    font-weight: normal;
+                    font-size: 17px;
+                }
+               }
+            }
+            .ViewProfile_content_section_1_right {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 60%;
+                    background-color: var(--primary);
+                    padding: 10px 50px;
+                    color:#fff;
+                    border-radius: 25px;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    text-align: center;
+                    svg{
+                        font-size: 22px;
+                    }
+                }
+               div{
+
+                margin-bottom: 10px;
+              
+                p{
+                    color:var(--secondary)
+                }
+                h3{
+                    margin: 0;
+                    font-weight: normal;
+                    font-size: 17px;
+                }
+               }
+            }
+        }
+        .ViewProfile_content_section_2_description{
+            margin: 30px 0;
+            
+        }
+        h4{
+            color:var(--secondary);
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+        .ViewProfile_content_section_3_experiences{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+         
+            .ViewProfile_content_section_3_experiences_left{
+                width: 50%;
+                p{
+                    margin-bottom: 10px;
+                }
+            }
+            .ViewProfile_content_section_3_experiences_right{
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                p{
+
+                    color:var(--secondary);                }
+            }
+            
+        }
+        .ViewProfile_content_section_4_skills{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            button{
+                margin-right: 10px;
+                background-color: var(--list_color_hover);
+                padding: 8px 25px;
+                border-radius: 25px;
+            }
+        }
+        .ViewProfile_content_section_5_pastMentees{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 20px;
+            div{
+                width: 25%;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                p{
+                    colo:#000;
+                }
+                span{
+                    color:var(--secondary);
+                    font-size: 14px;
+                }
+            }
+        }
+        .ViewProfile_content_section_5_pastMentees_mentored{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .ViewProfile_content_section_5_pastMentees_mentored_main{
+                width: 80%;
+                border-radius: 20px;
+                background-color: #eaf4f4;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                .ViewProfile_content_section_5_pastMentees_mentored_secondary{
+                    width: 70%;
+                   
+                    img{
+                        width: 100px;
+                        border-radius: 10px;
+                    }
+                    p{
+                        colo:#000;
+                    }
+                    span{
+                        color:var(--secondary);
+                        font-size: 14px;
+                    }
+
+                }
+                a{
+                    background-color: var(--primary);
+                    border-radius: 45px;
+                    padding: 10px 45px;
+                    color:#fff;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .BackgroundImage {
+        border-radius: 0px;
+
+        button {
+            padding: 3px 12px;
+            font-size: 14px;
+        }
+        .BackgroundImage_content {
+            .imageAvatar {
+                margin-top: 20px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+                svg {
+                    right: 20%;
+                    font-size: 28px;
+                }
+            }
+            h3 {
+                margin-top: 10px;
+            }
+            h4 {
+                font-weight: normal;
+            }
+            p {
+                color: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+}

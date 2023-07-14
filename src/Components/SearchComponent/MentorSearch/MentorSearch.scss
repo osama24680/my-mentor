@@ -1,0 +1,107 @@
+.MentorSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    .MentorSearch_filteration {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        .MentorSearch_filteration_text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+            }
+            p {
+            }
+        }
+        h4 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        .MentorSearch_filteration_checkboxes {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .MentorSearch_filteration_checkbox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                position: relative;
+                input[type="checkbox"] {
+                    position: absolute;
+                    right: 0;
+                    height: 17px;
+                    width: 17px;
+                    background-color: red;
+
+                }
+            }
+        }
+        .profileinfo_content_inputs_left_inputField{
+            margin-top: 20px !important;
+            label{
+                font-weight: bold;
+            }
+        }
+    }
+    .MentorSearch_elements{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+       
+        .MentorSearch_elements_element{
+            margin-bottom: 40px;
+            width: 30%;
+            cursor: pointer;
+            &:hover{
+                transform: scale(.9);
+            }
+            .MentorSearch_elements_element_image{
+                width: 100%;
+                position: relative;
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+                .MentorSearch_elements_element_evaluate{
+                    position: absolute;
+                    left:3%;
+                    bottom:5%;
+                    background-color: #fff;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 5px;
+                    color:#000;
+                    font-weight: bold;
+                    svg{
+                        color:gold;
+
+                    }
+                    span{
+                        color:gray;
+                        font-weight: normal;
+                    }
+                }
+            }
+            h3{
+                font-size: 16px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                color:#000;
+            }
+            p{
+                color:#000;
+            }
+         
+        }
+    }
+}

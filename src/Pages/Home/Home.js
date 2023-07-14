@@ -36,15 +36,15 @@ const Home = () => {
                   </option>
                 ))}
               </select>
-              <div className="arrowContainer">
+              <div className="arrowContainer" >
                 <IoIosArrowDown />
               </div>
             </div>
 
             <div className="searchmentors_content_inputs_searchInput">
-              <input type="text" placeholder="what do you need help with" />
+              <input onChange={(e)=>ctx.setSearchValue(e.target.value)} type="text" placeholder="Mentor Mentee" value={ctx.searchValue}/>
               <div>
-                <AiOutlineSearch />
+                <AiOutlineSearch  onClick={ctx.searchHome} style={{cursor:"pointer"}}/>
               </div>
             </div>
           </div>
@@ -61,17 +61,17 @@ const Home = () => {
         <h2>Recent Mentoring Opportunities</h2>
         <RecentOppo />
         <div className="more">
-          <Link to="/opportunitySearch">More Opportunities...</Link>
+          <Link to="/SearchResults/OpportunitySearch">More Opportunities...</Link>
         </div>
       </div>
       {/* ****************************************Invite**************************************** */}
       <Invite />
       {/* ****************************************OpenRequests**************************************** */}
       <div className="OpenRequests">
-        <h2>Recent Mentoring Opportunities</h2>
+        <h2>Open Mentoring Requests</h2>
         <OpenRequests />
         <div className="more">
-          <Link to="/OpenRequests">More Requests...</Link>
+          <Link to="/SearchResults/RequestSearch">More Requests...</Link>
         </div>
       </div>
       {/* ****************************************FAQ**************************************** */}

@@ -4,7 +4,7 @@ import { mentorStore } from '../../../ContextAPI/Store'
 import { AiFillStar } from "react-icons/ai"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-
+import {Link} from "react-router-dom"
 
 
 
@@ -12,7 +12,7 @@ const DiscoverTopMentors = () => {
     let ctx = useContext(mentorStore)
 
     const elements = ctx.discoverMentors.map(mentor => (
-        <div key={mentor.id} className='DiscoverMentors_elements_element'>
+        <Link to={`/ViewProfile/Mentor/${mentor?.owner}`} key={mentor.id} className='DiscoverMentors_elements_element'>
             <img src={mentor.img} alt="mentor" />
             <div>
                 <AiFillStar />
@@ -21,7 +21,7 @@ const DiscoverTopMentors = () => {
             </div>
             <h3>{mentor.name}</h3>
             <h4>{mentor.jop}</h4>
-        </div>
+        </Link>
     ))
 
     const responsive = {

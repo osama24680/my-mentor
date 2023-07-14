@@ -1,0 +1,233 @@
+.EditUserForm {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .firstSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .firstSection_left {
+            width: 59%;
+            .firstSection_left_inputField {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+
+                input {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 10px;
+                    border-bottom: 0.1rem solid var(--primary);
+                }
+                label {
+                    font-size: 15px;
+                    color: var(--secondary);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .firstSection_right {
+            width: 39%;
+            .firstSection_right_inputField {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+                &:nth-child(3) {
+                    width: 100%;
+                }
+                input {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 10px;
+                    border-bottom: 0.1rem solid var(--primary);
+                }
+                label {
+                    font-size: 15px;
+                    color: var(--secondary);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .secondSection {
+        width: 100%;
+        margin-top: 20px;
+        .mainTap {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: var(--secondary);
+            cursor: pointer;
+            svg {
+                margin-left: 10px;
+                margin-top: 3px;
+            }
+        }
+        .secondSection_inputs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            .secondSection_inputs_experience {
+                width: 45%;
+                margin-top: 20px;
+
+                label {
+                    font-size: 15px;
+                    color: var(--secondary);
+                }
+                .inputDelete{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    input {
+                        width: 100%;
+                        background-color: #fff;
+                        padding: 10px;
+                        margin-top: 10px;
+                        border-bottom: 0.1rem solid var(--primary);
+    
+                    }
+                    svg{
+                        color:var(--secondary);
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+              
+            }
+            .secondSection_inputs_duration {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 39%;
+                margin-top: 20px;
+                .secondSection_inputs_duration_from {
+                    width: 48%;
+                    label {
+                        font-size: 15px;
+                        color: var(--secondary);
+                    }
+                    input {
+                        width: 100%;
+                        background-color: #fff;
+                        padding: 10px;
+                        margin-top: 10px;
+                        border-bottom: 0.1rem solid var(--primary);
+                    }
+                }
+                .secondSection_inputs_duration_to {
+                    width: 48%;
+                    label {
+                        font-size: 15px;
+                        color: var(--secondary);
+                    }
+                    input {
+                        width: 100%;
+                        background-color: #fff;
+                        padding: 10px;
+                        margin-top: 10px;
+                        border-bottom: 0.1rem solid var(--primary);
+                    }
+                }
+            }
+        }
+    }
+    .thirdSection{
+        margin-top: 40px;
+        width: 100%;
+        h3{
+            font-size: 18px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        input{
+            width: 100%;
+            padding: 20px;
+            border-bottom:var(--primary) solid 2px;
+        }
+        button{
+            border:var(--secondary) solid 2px;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .skillList{
+            width: 100%;
+            border:var(--secondary  ) solid 2px;
+            padding:0 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .skillList_skill{
+                background-color:#86bdc2 ;
+                border-radius: 8px;
+                padding: 8px 25px;
+                color:#fff;
+                width: 18%;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .EditUserForm {
+        padding: 15px 10px;
+        .firstSection {
+            flex-wrap: wrap;
+            .firstSection_left {
+                width: 100%;
+                .firstSection_left_inputField {
+                    margin-bottom: 20px;
+                    label {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            .firstSection_right {
+                width: 100%;
+                .firstSection_right_inputField {
+                    margin-bottom: 20px;
+
+                    label {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .secondSection {
+        .secondSection_inputs {
+            flex-direction: column;
+            .secondSection_inputs_experience {
+                width: 100% !important;
+            }
+            .secondSection_inputs_duration {
+                width: 100% !important;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .thirdSection{
+  
+        .skillList{
+            width: 48%;
+       
+        }
+    }
+}

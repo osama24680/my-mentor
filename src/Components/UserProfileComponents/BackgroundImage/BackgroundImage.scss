@@ -1,0 +1,94 @@
+.BackgroundImage {
+    width: 100%;
+    height: 45vh;
+    border-radius: 20px;
+    background-image: url("../../../assets/colored_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    button {
+        padding: 7px 20px;
+        background-color: var(--primary);
+        border-radius: 20px;
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .BackgroundImage_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #000;
+        .imageAvatar {
+            position: relative;
+
+            img {
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+            }
+            svg {
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                font-size: 38px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        h4 {
+            font-weight: normal;
+        }
+        p {
+            color: #fff;
+            margin-top: 10px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .BackgroundImage {
+        border-radius: 0px;
+
+        button {
+            padding: 3px 12px;
+            font-size: 14px;
+        }
+        .BackgroundImage_content {
+        
+            .imageAvatar {
+                margin-top: 20px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+                svg {
+        
+                    right: 20%;
+                    font-size: 28px;
+              
+                }
+            }
+            h3 {
+                margin-top: 10px;
+            }
+            h4 {
+                font-weight: normal;
+            }
+            p {
+                color: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+}

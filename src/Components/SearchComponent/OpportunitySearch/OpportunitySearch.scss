@@ -1,0 +1,118 @@
+.MentorSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    .MentorSearch_filteration {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        .MentorSearch_filteration_text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+            }
+            p {
+            }
+        }
+        h4 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        .MentorSearch_filteration_checkboxes {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .MentorSearch_filteration_checkbox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                position: relative;
+                input[type="checkbox"] {
+                    position: absolute;
+                    right: 0;
+                    height: 17px;
+                    width: 17px;
+                    background-color: red;
+                }
+            }
+        }
+        .profileinfo_content_inputs_left_inputField {
+            margin-top: 20px !important;
+            label {
+                font-weight: bold;
+            }
+        }
+    }
+    .MentorSearch_elements {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .MentorSearch_elements_element {
+            margin-bottom: 40px;
+            width: 45%;
+            padding: 15px;
+            border: solid 2px #e1e1e1;
+            border-radius: 10px;
+            cursor: alias   ;
+            &:hover {
+                transform: scale(0.9);
+            }
+            .MentorSearch_elements_element-part1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                .MentorSearch_elements_element-part1-left {
+                    width: 60%;
+                    h3 {
+                        font-weight: bold;
+                        color: #000;
+                    }
+                    span {
+                        color: var(--primary);
+                        font-weight: bold;
+                    }
+                }
+                .MentorSearch_elements_element-part1-right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40%;
+                    a {
+                        background-color: var(--primary);
+                        color: #fff;
+                        padding: 5px 35px;
+                        border-radius: 25px;
+                        margin-bottom: 10px;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .MentorSearch_elements_element-part2 {
+            width: 100%;
+            button {
+                background-color: var(--secondary);
+                color: #fff;
+                padding: 5px 25px;
+                border-radius: 25px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+        }
+        .MentorSearch_elements_element-part3{
+            margin-top: 15px;
+            font-size: 15px;
+        }
+    }
+}

@@ -3,12 +3,13 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { mentorStore } from '../../../ContextAPI/Store'
 import { AiFillStar } from "react-icons/ai"
+import {Link } from "react-router-dom"
 import "./LocationMentors.scss"
 const LocationMentors = () => {
     let ctx = useContext(mentorStore)
 
     const elements = ctx.discoverMentors.map(mentor => (
-        <div key={mentor.id} className='locationMentors_elements_element'>
+        <Link to={`/ViewProfile/Mentor/${mentor?.owner}`}  key={mentor.id} className='locationMentors_elements_element'>
             <img src={mentor.img} alt="mentor" />
             <div>
                 <AiFillStar />
@@ -17,7 +18,7 @@ const LocationMentors = () => {
             </div>
             <h3>{mentor.name}</h3>
             <h4>{mentor.jop}</h4>
-        </div>
+        </Link>
     ))
 
     const responsive = {
