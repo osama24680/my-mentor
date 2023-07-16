@@ -337,7 +337,9 @@ export const MentorProvider = (props) => {
       }
     }
   }
-
+// const HandleSignup=(e)=>{
+//   navigate("/login")
+// }
 
   useEffect(() => {
 

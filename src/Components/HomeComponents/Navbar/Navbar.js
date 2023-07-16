@@ -18,9 +18,8 @@ const Navbar = () => {
           onClick={ctx.accountToggle}
         ></div>
         <div
-          className={`navbar_account_dropdown ${
-            ctx.active ? "" : "hideAccount"
-          }`}
+          className={`navbar_account_dropdown ${ctx.active ? "" : "hideAccount"
+            }`}
         >
           {ctx.isLoggedin ? (
             <>
@@ -37,7 +36,7 @@ const Navbar = () => {
                 <Link to="/UserProfile/ahmed_khaled/Mentee">View Profile</Link>
               </div>
               <div className="navbar_account_dropdown_help">
-                <Link to="/GetInTouch" style={{color:"#fff"}}>Help</Link>
+                <Link to="/GetInTouch" style={{ color: "#fff" }}>Help</Link>
               </div>
               <div className="navbar_account_dropdown_logOut">
                 <p>Log Out</p>

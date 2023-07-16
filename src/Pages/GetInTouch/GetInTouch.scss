@@ -1,0 +1,69 @@
+.GetInTouch{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .GetInTouch_left{
+        width: 80%;
+        h1{
+            color:#000;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        p{
+
+        }
+    }
+    .GetInTouch_right{
+        width: 30%;
+        padding: 20px;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .GetInTouch_right_part1{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                label{
+                    margin-bottom: 5px;
+                    color:var(--secondary);
+
+                }
+                input{
+                    border-bottom: 2px solid var(--primary);
+                    padding: 10px 20px;
+                    width: 80%;
+                }
+            }
+        }
+        .GetInTouch_right_part2{
+            width: 100%;
+            margin-top: 20px;
+            label{
+                margin-bottom: 5px;
+                color:var(--secondary);
+
+            }
+            input{
+                width: 100%;
+                border-bottom: 2px solid var(--primary);
+                padding: 10px 20px;
+            }
+        }
+        .GetInTouch_right_part2_btn{
+            margin-top: 20px;
+            button{
+                padding: 10px 40px;
+                color:#fff;
+                border-radius: 15px;
+                background-color: var(--primary);
+                cursor: pointer;
+            }
+        }
+    }
+}
